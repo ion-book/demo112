@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ReversePipe implements PipeTransform {
   
-  transform(value: string, ...args) {
-    return value.toLowerCase();
+  transform(value: string) {
+    return value.split("").reverse().join("");
   }
 }

@@ -10,7 +10,7 @@ export class UserService {
   ) {}
 
   getAll(){
-    return this.http.get('https://randomuser.me/api/?results=50')
+    return this.http.get('https://randomuser.me/api/?results=10')
     .map(response => response.json());
   }
 

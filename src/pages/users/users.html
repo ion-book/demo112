@@ -7,6 +7,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content>
+  <h1 padding>With custom component</h1>
+  <ion-list>
+    <my-item-user *ngFor="let user of users" [user]="user"></my-item-user>
+  </ion-list>
+  <h1 padding>Without custom component</h1>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-avatar item-left>
+        <img [src]="user.picture.medium" alt="">
+      </ion-avatar>
+      <h2>{{ user.name.title | reverse }} {{ user.name.last }}</h2>
+      <p my-highlight>{{ user.email }}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

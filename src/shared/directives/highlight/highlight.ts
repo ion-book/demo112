@@ -1,13 +1,15 @@
-import { Directive } from '@angular/core';
-
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[highlight]' // Attribute selector
+  selector: '[my-highlight]' // Attribute selector
 })
 export class HighlightDirective {
 
-  constructor() {
-    console.log('Hello Highlight Directive');
+  constructor(
+    public element: ElementRef
+  ) {
+    //This is only example for set backgroundColor is better with css
+    this.element.nativeElement.style.backgroundColor = 'yellow';
   }
 
 }

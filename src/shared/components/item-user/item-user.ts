@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'item-user',
+  selector: 'my-item-user',
   templateUrl: 'item-user.html'
 })
 export class ItemUserComponent {
 
-  text: string;
+  @Input() user: any  = {
+    picture: {},
+    name: {}
+  };
 
-  constructor() {
-    console.log('Hello ItemUser Component');
-    this.text = 'Hello World';
-  }
+  constructor() {}
 
 }
