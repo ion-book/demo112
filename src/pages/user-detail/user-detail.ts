@@ -8,10 +8,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UserDetailPage {
 
+  user: any = {};
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams
-  ) {}
+  ) {
+    this.user = this.navParams.get('user');
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UserDetail');

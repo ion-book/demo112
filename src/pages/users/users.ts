@@ -27,4 +27,10 @@ export class UsersPage {
     });
   }
 
+  goToUserDetailPage(user){
+    this.navCtrl.push('UserDetailPage', {
+      user: user
+    });
+  }
+
 }
