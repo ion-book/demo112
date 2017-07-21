@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { UserService } from '../../providers/user-service';
+import { UserService } from '../../providers/user-service/user-service';
 
 @IonicPage()
 @Component({
