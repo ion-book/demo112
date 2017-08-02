@@ -1,4 +1,4 @@
-## Repositorio basado en el artículo [Pruebas unitarias: Configuración de entorno](https://www.ion-book.com/blog/ionic2/unit-test-config-ionic/)
+## Repositorio basado en el artículo [Pruebas unitarias: Configuración de entorno](https://www.ion-book.com/blog/tips/ionic-page-and-lazy-loading/)
 
 Este proyecto usa:
 
@@ -19,10 +19,6 @@ Y luego
 
 ```
 ionic cordova prepare
-```
-
-```
-npm test
 ```
 
 esto es para descargar todas las dependencias del proyecto.
