@@ -1,4 +1,4 @@
-## Repositorio basado en el artículo [Reduce el tiempo de carga de tu app](https://www.ion-book.com/blog/tips/ionic-page-and-lazy-loading/)
+## Repositorio basado en el artículo [Pruebas unitarias: Configuración de entorno](https://www.ion-book.com/blog/ionic2/unit-test-config-ionic/)
 
 Este proyecto usa:
 
@@ -19,6 +19,10 @@ Y luego
 
 ```
 ionic cordova prepare
+```
+
+```
+npm test
 ```
 
 esto es para descargar todas las dependencias del proyecto.
