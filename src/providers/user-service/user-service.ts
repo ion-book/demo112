@@ -1,17 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class UserService {
 
   constructor(
-    public http: Http
+    public http: HttpClient
   ) {}
 
   getAll(){
-    return this.http.get('https://randomuser.me/api/?results=10')
-    .map(response => response.json());
+    return this.http.get('https://randomuser.me/api/?results=10');
   }
 
 }
