@@ -8,6 +8,6 @@ rm -r  *.*
 mv www/* .
 rm -rf www
 git add .
-git commit -m "Publishing to github pages"
+git commit -m ":rocket: Publishing to github pages"
 git push origin gh-pages
 git checkout master
