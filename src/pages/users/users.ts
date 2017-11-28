@@ -20,7 +20,7 @@ export class UsersPage {
 
   ionViewDidLoad() {
     this.userService.getAll()
-    .subscribe(data =>{
+    .subscribe((data: any) =>{
       this.users = data.results;
     }, error =>{
       console.error(error);
